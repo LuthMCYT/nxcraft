@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HolaClient Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./assets/app.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cf4342c927.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+</head>
+
+<body class="bg-zinc-950 flex flex-col items-center justify-center h-screen overflow-hidden">
+    <div class="sm:mx-auto sm:w-full sm:max-w-md">
+        <img class="mx-auto h-16" src="https://cdn.holaclient.tech/logo.png">
+        <h2 class="text-center font-nunito text-2xl text-white">Welcome to HolaClient<br><span class="text-center font-urbanist text-gray-200 leading-[1.2] tracking-tighter text-2xl">MARKETPLACE</span></h2>
+      </div>
+    <div class="bg-zinc-900 border border-zinc-700/50 rounded-3xl my-8 w-full max-w-md p-12">
+        <div class="text-center text-white relative">
+            <div class="absolute -z-10 -mt-40 -mr-40">
+                <div
+                    class="w-96 h-96 bg-gradient-to-r from-rose-500 to-purple-500 rounded-3xl mix-blend-multiply filter blur-3xl opacity-20 animation-blob">
+                </div>
+            </div>
+            <div class="absolute -z-10 -mt-40 -ml-40">
+                <div
+                    class="w-96 h-96 bg-gradient-to-r from-sky-500 to-yellow-500 rounded-3xl mix-blend-multiply filter blur-3xl opacity-20 animation-blob animation-delay-2000">
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-7 w-full items-center">
+            <div class="bg-zinc-800 col-span-2 h-0.5 w-full"></div>
+            <span class="text-gray-300 col-span-3 text-lg text-center">login with</span>
+            <div class="bg-zinc-800 col-span-2 h-0.5 w-full"></div>
+        </div>
+        <div class="w-full mt-4">
+            <div class="relative group w-full mt-4 h-max shadow-2xl shadow-transparent/40">
+                <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 rounded-full blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                <button data-modal-target="auth-modal" data-modal-toggle="auth-modal" type="button" class="text-white w-full relative shadow-md bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 font-medium rounded-full text-lg p-2 text-center outline-none">HolaSSO</button>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <p class="text-gray-400 font-nunito">
+            &copy;
+            <script>document.write(new Date().getFullYear());</script> <a href="https://github.com/HolaClient/HolaClient">HolaClient</a>
+        </p>
+        <p class="space-x-2">
+            <a href="">
+                <i class="fa-brands fa-discord text-gray-500 hover:text-gray-300 hover:duration-500 duration-300 hover:bg-zinc-800 rounded-full p-2"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-x-twitter text-gray-500 hover:text-gray-300 hover:duration-500 duration-300 hover:bg-zinc-800 rounded-full p-2"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-github text-gray-500 hover:text-gray-300 hover:duration-500 duration-300 hover:bg-zinc-800 rounded-full p-2"></i>
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
