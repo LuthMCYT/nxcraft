@@ -42,7 +42,7 @@ app.post('/user', (req, res) => { // Will run when there are any incoming POST r
     data_1.append('client_id', client_id); // Append the client_id variable to the data
     data_1.append('client_secret', client_secret); // Append the client_secret variable to the data
     data_1.append('grant_type', 'authorization_code'); // This field will tell the Discord API what you are wanting in your initial request.
-    data_1.append('redirect_uri', `https://nxcraft.my.id/login-succses?id=qj2bqpx954acddm2jrz38r2`); // This is the redirect URL where the user will be redirected when they finish the Discord login
+    data_1.append('redirect_uri', `https://nxcraft.my.id/login-succses-id-qj2bqpx954acddm2jrz38r2`); // This is the redirect URL where the user will be redirected when they finish the Discord login
     data_1.append('scope', 'identify'); // This tells the Discord API what info you would like to retrieve. You can change this to include guilds, connections, email, etc.
     data_1.append('code', req.body) // This is a key parameter in our upcoming request. It is the code the user got from logging in. This will help us retrieve a token which we can use to get the user's info.
 
